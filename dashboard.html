@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBouc - Tableau de bord</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>MyBouc</h1>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="library.html">Bibliothèque</a></li>
+        <li><a href="interludes.html">Interludes</a></li>
+        <li><a href="dashboard.html" class="active">Tableau de bord</a></li>
+        <li><a href="about.html">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section class="dashboard">
+      <h2>Tableau de bord</h2>
+      <div id="followedStories">
+        <p>Vos récits suivis apparaîtront ici.</p>
+      </div>
+      <div id="favorites">
+        <p>Vos favoris apparaîtront ici.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MyBouc. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
