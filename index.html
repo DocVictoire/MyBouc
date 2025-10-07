@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBouc - Accueil</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>MyBouc</h1>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="library.html">Bibliothèque</a></li>
+        <li><a href="interludes.html">Interludes</a></li>
+        <li><a href="dashboard.html">Tableau de bord</a></li>
+        <li><a href="about.html">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section class="teaser">
+      <h2>Bienvenue sur MyBouc</h2>
+      <p>Plongez dans un univers narratif immersif et poétique. Suivez vos récits préférés, enregistrez vos passages favoris et découvrez des interludes méditatifs.</p>
+      <button onclick="showLoginModal()">Connexion / Inscription</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MyBouc. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Modals -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLoginModal()">&times;</span>
+      <h3>Connexion / Inscription</h3>
+      <form id="authForm">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Mot de passe" required>
+        <button type="submit">Valider</button>
+      </form>
+      <p id="authMessage"></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
